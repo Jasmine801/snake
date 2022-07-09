@@ -36,10 +36,16 @@ public class Point
         {
             y = y + offset;
         }
-        else
+        else if (direction == Direction.DOWN)
         {
-            y = y - offset;
+            y = y + offset;
         }
+    }
+
+    public void Clear()
+    {
+        sym = ' ';
+        Draw();
     }
     public void Draw()
     {
